@@ -11,4 +11,4 @@ def myPrint(myString):
         Does not return anything
     """
 
-    print(myString)
+    print(myString + "!!!!!")
