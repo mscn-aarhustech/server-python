@@ -9,15 +9,11 @@ jobs:
     build:
         runs-on: ubuntu-latest
 
-        permissions:
-            contents: read
-            packages: write
-
         steps:
             - uses: actions/checkout@v4
 
-            - name: Build Docker image no GHCR
-              run: docker build -t hello-python ./HelloWorldDocker
+            - name: Build Docker image
+              run: docker build -t hello-kitty-hej-mor ./HelloWorldDocker
             
-            - name: Test Docker image no GHCR
-              run: docker run hello-python
+            - name: Test Docker image
+              run: docker run hello-kitty-hej-mor
