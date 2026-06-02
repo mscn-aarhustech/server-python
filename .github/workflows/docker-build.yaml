@@ -24,6 +24,7 @@ jobs:
              #run: docker build -t hello-python ./HelloWorldDocker
             
             - name: Run Docker image
+              timeout-minutes: 1
               run: docker run ghcr.io/${{ github.repository_owner }}/hello-kubernetes:latest
              #run: docker run hello-python
 
